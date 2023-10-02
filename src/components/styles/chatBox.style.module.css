@@ -1,0 +1,51 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    width: fit-content;
+    background-color: #e74c3c;
+}
+
+.messageBox {
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    overflow: scroll;
+    margin: 5px;
+}
+.messageBox  p{
+    margin: 5px;
+    border: solid 2px #2ecc71;
+    border-radius: 5px;
+}
+
+.panel {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+.panel input{
+    border: none;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 5px;
+}
+.panel input:focus{
+    outline: solid #3498db;
+}
+.panel button{
+    border: none;
+    width: 70px;
+    height: 40px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
