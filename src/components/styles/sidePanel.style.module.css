@@ -8,21 +8,84 @@
     height: 80px;
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     padding: 0px 15px;
+    position: relative;
 }
 .header img {
     width: 50px;
     cursor: pointer;
 }
 .header img:hover {
-    width: 50px;
     scale: 1.2;
+}
+.header img:active {
+    scale: 1;
 }
 .header span{
     font-size: 1rem;
     margin-left: 10px;
+}
+.groupsClose{
+    transition: all .3s;
+    background-color: white;
+    position: absolute;
+    top : 45px;
+    left: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 20px;
+    padding: 10px 20px;
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+
+}
+.groupsClose span{
+    display: inline-block;
+    width: 90%;
+    padding: 10px 10px;
+    border-radius: 15px;
+    margin: 0;
+    text-align: start;
+    cursor: pointer;
+}
+.groupsClose span:hover{
+    background-color: #2ecc71;
+}
+.groupsClose span:active{
+    background-color: white;
+}
+.groupsOpen{
+    background-color: white;
+    position: absolute;
+    top : 45px;
+    left: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 20px;
+    padding: 10px 20px;
+    z-index: 10;
+}
+.groupsOpen span{
+    display: inline-block;
+    width: 85%;
+    padding: 10px 10px;
+    border-radius: 15px;
+    margin: 0;
+    text-align: start;
+    cursor: pointer;
+}
+.groupsOpen span:hover{
+    background-color: #2ecc71;
+}
+.groupsOpen span:active{
+    background-color: white;
 }
 
 .search{
@@ -54,12 +117,15 @@
 .list li:hover{
     scale: 1.07;
 }
+.list li:active{
+    scale: 1;
+}
 .list li div {
     padding: 5px 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
     cursor: pointer;
 }
 .list li div span:nth-child(1){

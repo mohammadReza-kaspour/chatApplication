@@ -30,13 +30,16 @@
 .header div img:hover{
     scale: 1.1;
 }
+.header div img:active{
+    scale: 1;
+}
 .header div span{
     margin-left: 10px;
 }
 
 .title{
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     padding: 5px 10px;
     flex-grow: 1;
@@ -48,15 +51,15 @@
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     padding: 10px;
 }
 .sendMessage{
     display: flex;
     flex-direction: row;
-    justify-content: start;
-    align-items: end;
+    justify-content: flex-start;
+    align-items: flex-end;
     min-height: fit-content;
     margin: 15px 0px;
     margin-right: auto;
@@ -70,6 +73,9 @@
 .sendMessage img:hover{
     scale: 1.1;
 }
+.sendMessage img:active{
+    scale: 1;
+}
 .sendMessage p{
     min-width: 200px;
     max-width: 300px;
@@ -81,8 +87,8 @@
 .revievemessage{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: start;
-    align-items: end;
+    justify-content: flex-start;
+    align-items: flex-end;
     min-height: fit-content;
     margin: 15px 0px;
     margin-left: auto;
@@ -95,6 +101,9 @@
 }
 .revievemessage img:hover{
     scale: 1.1;
+}
+.revievemessage img:active{
+    scale: 1;
 }
 .revievemessage p{
     text-align: start;

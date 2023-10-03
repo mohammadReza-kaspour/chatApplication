@@ -11,6 +11,7 @@ export class SidePanel extends Component {
         super()
         this.state = {
             inputValue : "",
+            groupsOpen : false,
         }
     }
     inputHandler = (event) => {
@@ -18,11 +19,21 @@ export class SidePanel extends Component {
             inputValue : event.target.value,
         }))
     }
+    groupHandler = () => {
+        this.setState((prevState) => ({
+            groupsOpen : !prevState.groupsOpen,
+        }))
+    }
     render() {
         return (
             <div className={styles.container}>
                 <div className={styles.header}>
-                    <img src={icon1}/>
+                    <div className={this.state.groupsOpen ? styles.groupsOpen : styles.groupsClose}>
+                        <span>programming</span>
+                        <span>school</span>
+                        <span>sports</span>
+                    </div>
+                    <img src={icon1} alt='icon' onClick={this.groupHandler}/>
                     <span>Socket.IO Chat</span>
                 </div>
                 <input  className={styles.search} 
@@ -31,21 +42,21 @@ export class SidePanel extends Component {
                 <div className={styles.messageList}>
                     <ul className={styles.list}>
                         <li>
-                            <img src={icon2}/>
+                            <img src={icon2} alt='icon'/>
                             <div>
                                 <span>Node js</span>
                                 <span>Node Support Groupe</span>
                             </div>
                         </li>
                         <li>
-                            <img src={icon3}/>
+                            <img src={icon3} alt='icon'/>
                             <div>
                                 <span>React js</span>
                                 <span>React Support Groupe</span>
                             </div>
                         </li>
                         <li>
-                            <img src={icon4}/>
+                            <img src={icon4} alt='icon'/>
                             <div>
                                 <span>Flutter</span>
                                 <span>Flutter Support Groupe</span>

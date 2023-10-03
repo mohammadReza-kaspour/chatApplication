@@ -22,7 +22,7 @@ export class MainPanel extends Component {
             <div className={styles.container}>
                 <div className={styles.header}>
                     <div>
-                        <img src={senderImage}/>
+                        <img src={senderImage} alt='icon'/>
                         <span>mohammad reza Kaspour</span>
                     </div>
                     <span>Online People : 10</span>
@@ -30,13 +30,13 @@ export class MainPanel extends Component {
                 <p className={styles.title}>Node Support Groupe</p>
                 <div className={styles.messageBox}>
                     <div className={styles.sendMessage}>
-                        <img src={senderImage}/>
+                        <img src={senderImage} alt='icon'/>
                         <p>
                             hello every one good morning , i have a very important question about importing imgs into nodejs is there any one who can help me 
                         </p>
                     </div>
                     <div className={styles.revievemessage}>
-                        <img src={destImage}/>
+                        <img src={destImage} alt='icon'/>
                         <p>
                             good morning guys ...
                         </p>
