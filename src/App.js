@@ -1,10 +1,13 @@
-import './App.css';
-import { ChatBox } from './components/chatBox';
+import { MainPanel } from './components/mainPanel';
+import { SidePanel } from './components/sidePanel';
+
+import styles from "./App.module.css";
 
 function App() {
   return (
-    <div className="App">
-        <ChatBox />
+    <div className={styles.App}>
+        <SidePanel/>
+        <MainPanel/>
     </div>
   );
 }

@@ -1,0 +1,135 @@
+.container {
+    height: 90vh;
+    background-color: white;
+    flex-grow: 20;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    /* height: 70px; */
+    background-color: #3498db;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    flex-grow: 1;
+}
+.header div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header div img{
+    width: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.header div img:hover{
+    scale: 1.1;
+}
+.header div span{
+    margin-left: 10px;
+}
+
+.title{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 5px 10px;
+    flex-grow: 1;
+    background-color: #2980b9;
+}
+
+.messageBox{
+    flex-grow: 60;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+}
+.sendMessage{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: end;
+    min-height: fit-content;
+    margin: 15px 0px;
+    margin-right: auto;
+}
+.sendMessage img{
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.sendMessage img:hover{
+    scale: 1.1;
+}
+.sendMessage p{
+    min-width: 200px;
+    max-width: 300px;
+    text-align: start;
+    background-color: #3498db;
+    padding: 15px 10px;
+    border-radius: 20px 20px 20px 0px;
+}
+.revievemessage{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: end;
+    min-height: fit-content;
+    margin: 15px 0px;
+    margin-left: auto;
+}
+.revievemessage img{
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.revievemessage img:hover{
+    scale: 1.1;
+}
+.revievemessage p{
+    text-align: start;
+    background-color: #bdc3c7;
+    padding: 15px 10px;
+    border-radius: 20px 20px 0px 20px;
+}
+
+.sendPanel{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.sendPanel input{
+    flex-grow: 1;
+    outline: none;
+    border: none;
+    height: 30px;
+    padding: 5px 20px;
+    font-size: 1.1rem;
+}
+.sendPanel button{
+    width: 100px;
+    border: none;
+    border-radius: 15px;
+    height: 40px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+.sendPanel button:hover{
+    background-color: #3498db;
+}
+.sendPanel button:active{
+    background-color: white;
+}
